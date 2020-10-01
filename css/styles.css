@@ -52,8 +52,12 @@ h2 {
 
 .avatar {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
+}
+
+.user-container {
+  display: flex;
 }
 
 .avatar .user-img {
@@ -78,8 +82,8 @@ h2 {
 .share-icon-container {
   width: 36px;
   height: 36px;
+  margin-right: 50px;
   background-color: hsl(210, 46%, 95%);
-  margin-left: 135px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -95,7 +99,7 @@ h2 {
 .share-container {
   position: absolute;
   top: 138px;
-  right: -50px;
+  right: -45px;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -112,6 +116,8 @@ h2 {
   justify-content: space-evenly;
   background-color: hsl(217, 19%, 35%);
 }
+
+
 
 .social p {
   color: white;
@@ -131,7 +137,16 @@ h2 {
   border-width: 10px 10px 0 10px;
   border-color: hsl(217, 19%, 35%) transparent transparent transparent;
   margin: 0 auto;
+}
 
+.share-icon-container-mobile {
+  display: none;
+}
+.share-container-mobile {
+  display: none;
+}
+.social-mobile {
+  display: none;
 }
 
 .attribution { 

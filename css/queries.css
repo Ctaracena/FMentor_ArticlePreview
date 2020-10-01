@@ -3,15 +3,15 @@
 .card {
   flex-direction: column;
   margin: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   width: 80vw;
   height: auto;
 }
 
 .img-container {
   width: 80vw;
-  height: 380px;
+  height: 35vh;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 0;
@@ -20,7 +20,7 @@
 
 main {
   width: 100%;
-  height: 480px;
+  height: 65vh;
   background-color: white;
   border-top-right-radius: 0;
   border-bottom-right-radius: 15px;
@@ -32,13 +32,21 @@ main {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .description p {
   margin-top: 20px;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 19px;
+}
+
+.avatar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 26px;
 }
 
 .avatar .user-img {
@@ -80,8 +88,8 @@ h2 {
 .share-icon-container-mobile {
   width: 50px;
   height: 50px;
-  margin-left: 218px;
   margin-top: 10px;
+  margin-right: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -96,8 +104,8 @@ h2 {
 }
 
 .share-container-mobile {
-  position: relative;
-  top: -77px;
+  position: absolute;
+  bottom: 0px;
   display: none;
 }
 
@@ -132,12 +140,177 @@ h2 {
   color: white;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
 
 .social-mobile img {
   cursor: pointer;
   transform: scale(1.2);
 }
+
+}
+
+@media screen and (max-width: 600px) {
+  
+.img-container {
+  height: 40vh;
+}
+
+main {
+  height: 60vh;
+}
+
+  .description {
+    padding: 45px 50px 0px 50px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  .description p {
+    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+  .img-container {
+    height: 40vh;
+  }
+  
+  main {
+    height: 55vh;
+  }  
+
+  .description {
+    padding: 45px 35px 0px 35px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .description p {
+    font-size: 16px;
+  }
+  
+  .avatar .user-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 35px;
+    margin-right: 15px;
+  }
+
+  .avatar .details h3 {
+    font-size: 14px;
+  }
+
+  .avatar .details p {
+    font-size: 13px;
+  }
+
+  .share-icon-container-mobile {
+    width: 40px;
+    height: 40px;
+    margin-right: 45px;
+  }
+
+  .social-mobile {
+    padding: 0 25px;
+    height: 85px;
+  }
+  
+  .social-mobile p {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .social-mobile img {
+    transform: scale(1);
+  }
+
+  .close-share-icon-container-mobile {
+    width: 40px;
+    height: 40px;
+    margin-left: 80px;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  
+  .card {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90vw;
+  }  
+    
+.img-container {
+  height: 35vh;
+  width: 90vw;
+}
+
+main {
+  height: 55vh;
+}
+
+  .description {
+    padding: 45px 30px 0px 30px;
+  }
+  
+  h2 {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  .description p {
+    font-size: 14px;
+  }
+
+  .avatar {
+    padding-bottom: 22px;
+  }
+  
+  .avatar .user-img {
+    margin-left: 30px;
+    margin-right: 12px;
+  }
+
+  .share-icon-container-mobile {
+    width: 40px;
+    height: 40px;
+    margin-right: 39px;
+  }
+
+  .social-mobile {
+    padding: 0 25px;
+    height: 84px;
+    width: 90vw;
+  }
+  
+  .social-mobile p {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .social-mobile img {
+    transform: scale(1);
+  }
+
+  .close-share-icon-container-mobile {
+    width: 40px;
+    height: 40px;
+    margin-left: 35px;
+  }
+
 
 }
