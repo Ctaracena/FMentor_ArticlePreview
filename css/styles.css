@@ -26,7 +26,7 @@ body {
   background-size: cover;
 }
 
-main {
+.main {
   position: relative;
   width: 60%;
   background-color: white;
