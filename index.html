@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body>
+  <section class="card">
+    <div class="img-container"></div>
+    <main>
+      <div class="description">
+        <h2>Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h2>
+        <p>Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </p>
+      </div>
+      <div class="avatar">
+        <img class="user-img" src="images/avatar-michelle.jpg" alt="">
+        <div class="details">
+          <h3>Michelle Appleton</h3>
+          <p>28 Jun 2020</p>
+        </div>
+        <div class="share-icon-container">
+          <img src="images/icon-share.svg" alt="" class="share-icon">
+        </div>
+        <div class="share-icon-container-mobile">
+          <img src="images/icon-share.svg" alt="" class="share-icon-mobile">
+        </div>
+      </div>
+      <div class="share-container">
+        <div class="social">
+          <p>SHARE</p>
+          <img onclick="hide()" src="images/icon-facebook.svg" alt="facebook icon">
+          <img onclick="hide()" src="images/icon-twitter.svg" alt="twitter icon">
+          <img onclick="hide()" src="images/icon-pinterest.svg" alt="pinterest icon">
+          <div class="share-icon-container"></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+
+      <div class="share-container-mobile">
+        <div class="social-mobile">
+          <p>SHARE</p>
+          <img onclick="hideMobile()" src="images/icon-facebook.svg" alt="facebook icon">
+          <img onclick="hideMobile()" src="images/icon-twitter.svg" alt="twitter icon">
+          <img onclick="hideMobile()" src="images/icon-pinterest.svg" alt="pinterest icon">
+          <div onclick="hideMobile()" class="close-share-icon-container-mobile">
+            <img src="images/white-icon-share.svg" alt="" class="share-icon-mobile">
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+</html>
